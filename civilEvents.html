@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+
+    <style>
+        .title {
+            font-family: sans-sarif;
+        }
+    </style>
+
+</head>
+
+<body class="mb-5">
+
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><a href="welcome.php">Home</li></a>
+            <li><a href="eventPage.html">EVENTS</li></a>
+            <li><a href="certificateVerification.html">Verify Certificate</li></a>
+            <li><a href="contactUs.html">Contact Us</li></a>
+            <li><a href="developers.html">Developers</li></a>
+            <li><a href="aboutPage.html">About</li></a>
+            <li class="dropdown"><a href="javascript:void(0);" onclick="function1 ();">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+
+        <h1 class="title text-center text-danger font-weight-bold text-uppercase mt-5">Welcome to civil events</h1>
+
+        <div class="row mt-5">
+
+
+
+            <div class="col-md-4 mb-5">
+                <div class="card shadow text-center">
+                    <img src="images/paper.jpg" class="img-fluid">
+                    <h5 class="text-danger my-3">Entry Fee &#x20b9;150</h5>
+                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                        value="Click here to Register">
+                    <button type='button' data-toggle="modal" data-target='#modal1' class='btn btn-secondary mb-3 rounded-pill 
+             text-uppercase'>View Event Information<button>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-5">
+                <div class="card shadow text-center">
+                    <img src="images/poster.jpg" class="img-fluid">
+                    <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
+                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                        value="Click here to Register">
+                    <button type='button' data-toggle="modal" data-target='#modal2' class='btn btn-secondary mb-3 rounded-pill 
+             text-uppercase'>View Event Information<button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div class="card shadow text-center">
+                    <img src="images/civilProject.jpg" class="img-fluid">
+                    <h5 class="text-danger my-3">Entry Fee &#x20b9;200</h5>
+                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                        value="Click here to Register">
+                    <button type='button' data-toggle="modal" data-target='#modal3' class='btn btn-secondary mb-3 rounded-pill 
+             text-uppercase'>View Event Information<button>
+
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+
+
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+
+
+</body>
+
+</html>
