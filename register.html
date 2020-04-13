@@ -12,14 +12,14 @@
   <link rel="stylesheet" href="css/event-reg.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"
-   integrity="sha256-7OUNnq6tbF4510dkZHCRccvQfRlV3lPpBTJEljINxao=" crossorigin="anonymous"></script>
-  
+    integrity="sha256-7OUNnq6tbF4510dkZHCRccvQfRlV3lPpBTJEljINxao=" crossorigin="anonymous"></script>
+
   <title>GIT SHODH 2K20 Registration</title>
 </head>
 
 <body>
 
-<!--   ########################### PHP CODE START ##################################### -->
+  <!--   ########################### PHP CODE START ##################################### -->
 
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,32 +66,26 @@
 
       <div class="form-row">
         <div class="form-group col-md-12">
-          <label for="inputEmail4">Enter Your Username</label>
-          <input type="email" class="form-control" name="userName" id="inputEmail4" placeholder="Email" required>
+
+          <input type="email" class="form-control" name="userName" placeholder="Email">
         </div>
 
         <div class="form-group col-md-6">
-          <label for="inputFirstName4">First Name</label>
-          <input type="text" class="form-control" name="firstName" id="inputFirstName4" placeholder="First Name" required>
+          <input type="text" class="form-control" name="firstName" placeholder="First Name">
         </div>
 
         <div class="form-group col-md-6">
-          <label for="inputLastName4">Last Name</label>
-          <input type="text" class="form-control" name="lastName" id="inputLastName4" placeholder="Last Name" required>
-        </div>
-
-
-
-        <div class="form-group col-md-6">
-          <label for="inputNumber4">Mobile Number</label>
-          <input type="text" class="form-control" name="mobileNumber" id="inputNumber4" placeholder="Mobile Number"
-            required>
+          <input type="text" class="form-control" name="lastName" placeholder="Last Name">
         </div>
 
         <div class="form-group col-md-6">
-          <label for="inputNumber4">Enter Your College Name</label>
-          <input list="collegeNameList" class="form-control" name="collegeName" id="collegeName4"
-            placeholder="College Name" autocomplete="off" required>
+          <input type="text" class="form-control" name="mobileNumber" placeholder="Mobile Number">
+        </div>
+
+        <div class="form-group col-md-6">
+
+          <input list="collegeNameList" class="form-control" name="collegeName" placeholder="College Name"
+            autocomplete="off" required>
           <datalist id="collegeNameList">
             <option disabled selected>Choose Your College</option>
             <option> (10 )Anjuman-I-Islam's M. H. Saboo Siddik College of Engineering</option>
@@ -164,9 +158,9 @@
 
 
         <div class="form-group col-md-6">
-          <label for="inputNumber4">Enter Your Department Name</label>
+
           <input list="departmentName" class="form-control" name="department" id="department4"
-            placeholder="Department Name" autocomplete="off" required>
+            placeholder="Department Name" autocomplete="off">
           <datalist id="departmentName">
             <option value="Electronics and Telecommunication"></option>
             <option value="Chemical"></option>
@@ -191,9 +185,9 @@
         </div>
 
         <div class="form-group col-md-6">
-          <label for="inputNumber4">Enter Your Acadmic Year</label>
+
           <input list="yearName" class="form-control" name="year" id="year4" placeholder="First/Second/Third/Last Year"
-            autocomplete="off" required>
+            autocomplete="off">
           <datalist id="yearName">
             <option value="First Year"></option>
             <option value="Second Year"></option>
@@ -203,17 +197,16 @@
         </div>
 
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Password</label>
           <input type="password" class="form-control" name="password" id="inputPassword4" placeholder="Password"
             required>
         </div>
 
 
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Confirm Password</label>
           <input type="password" class="form-control" name="confirm_password" id="inputPassword"
             placeholder="Confirm Password" required>
         </div>
+
       </div>
 
       <div class="form-group">
@@ -224,7 +217,8 @@
           </label>
         </div>
       </div>
-      <input type="submit"  name="submit" class="btn btn-primary" value="Register Here">
+
+      <input type="submit" name="submit" class="btn btn-primary" value="Register Here">
     </form>
     <br>
   </div>
