@@ -9,10 +9,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Local CSS-->
   <link rel="stylesheet" href="css/event-reg.css">
+  <!--Animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"
-    integrity="sha256-7OUNnq6tbF4510dkZHCRccvQfRlV3lPpBTJEljINxao=" crossorigin="anonymous"></script>
+  <!-- SweetAlert.js -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
   <title>GIT SHODH 2K20 Registration</title>
 </head>
@@ -48,7 +50,7 @@
 
 
 
-  <div class="container mt-4">
+  <main class="container mt-4">
 
     <h2 class="text-center text-uppercase">git <span class="text-danger">shodh</span> 2K20 Registration</h2>
     <hr>
@@ -158,7 +160,6 @@
 
 
         <div class="form-group col-md-6">
-
           <input list="departmentName" class="form-control" name="department" id="department4"
             placeholder="Department Name" autocomplete="off">
           <datalist id="departmentName">
@@ -185,7 +186,6 @@
         </div>
 
         <div class="form-group col-md-6">
-
           <input list="yearName" class="form-control" name="year" id="year4" placeholder="First/Second/Third/Last Year"
             autocomplete="off">
           <datalist id="yearName">
@@ -209,19 +209,11 @@
 
       </div>
 
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
 
       <input type="submit" name="submit" class="btn btn-primary" value="Register Here">
     </form>
-    <br>
-  </div>
+
+  </main>
 
 
 
