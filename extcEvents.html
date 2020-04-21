@@ -6,161 +6,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration</title>
 
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/nav.css">
 
     <style>
-        .title {
-            font-family: sans-sarif;
+        h3,
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #AA076B;
+            background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+            background: linear-gradient(to right, #61045F, #AA076B);
+            color: white;
+        }
+
+        body,
+        nav {
+            background: #AA076B;
+            background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+            background: linear-gradient(to right, #61045F, #AA076B);
         }
     </style>
 
 </head>
 
-<body class="mb-5">
+<body>
 
-    <nav>
-        <ul class="topnav" id="dropdownclick">
-            <li><a href="welcome.php">Home</li></a>
-            <li><a href="eventPage.html">EVENTS</li></a>
-            <li><a href="certificateVerification.html">Verify Certificate</li></a>
-            <li><a href="contactUs.html">Contact Us</li></a>
-            <li><a href="developers.html">Developers</li></a>
-            <li><a href="aboutPage.html">About</li></a>
-            <li class="dropdown"><a href="javascript:void(0);" onclick="function1 ();">&#9776;</a></li>
-        </ul>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-white" href="index.html">Home</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="eventPage.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="certificateVerification.html">Verify Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contactUs.html">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="developers.html">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="aboutPage.html">About</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
-    <div class="container">
+    <main class="container text-white">
 
-        <h1 class="title text-center text-danger font-weight-bold text-uppercase mt-5">Welcome to extc events</h1>
+        <h1 class="title text-center  font-weight-bold text-uppercase mt-5">Welcome to extc events</h1>
 
         <div class="row mt-5">
 
-
-
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/paper.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;150</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal1' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal1' class='btn mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
 
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/poster.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal2' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal2' class='btn mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/extcProject.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;200</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal3' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal3' class='btn  mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/CalciWar.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;50</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal4' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal4' class='btn  mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
 
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/logoContest.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
                     <button type='button' data-toggle="modal" data-target='#modal5' class='btn btn-secondary mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
-
-
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/school.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal' class='btn mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
-
-
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/funTech.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal' class='btn mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
+            </section>
 
 
 
-            <div class="col-md-4 mb-5">
+            <section class="col-md-4 mb-5">
                 <div class="card shadow text-center">
                     <img src="images/techBoss.jpg" class="img-fluid">
                     <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
-                    <input type="submit" class="btn btn-primary text-uppercase btn-block mb-2 rounded-pill"
+                    <input type="submit" class="btn text-uppercase btn-block mb-2 rounded-pill"
                         value="Click here to Register">
-                    <button type='button' data-toggle="modal" data-target='#modal' class='btn btn-secondary mb-3 rounded-pill 
+                    <button type='button' data-toggle="modal" data-target='#modal' class='btn mb-3 rounded-pill 
              text-uppercase'>View Event Information<button>
 
                 </div>
-            </div>
-
-
-
-
-
-
+            </section>
 
         </div>
-    </div>
+    </main>
 
 
-
-
-    <!--######################### Modals of the Event  ############################################-->
+    <!--Modals of the Event-->
 
     <!--  Paper Modal -->
 
@@ -196,7 +215,8 @@
 
                                 <ol>
 
-                                    <li> Submissions must include title, author’s details, abstract, keywords and full
+                                    <li> Submissions must include title, author’s details, abstract, keywords and
+                                        full
                                         paper
                                         should
                                         not exceed 6 pages and must be in the standard IEEE format. </li>
@@ -219,7 +239,8 @@
                                 </ol>
 
                                 <h4 class="font-weight-bold text-warning">Important Dates:-</h4>
-                                <p> The Abstract of Paper Presentation topic in .pdf or .doc format should be mailed to
+                                <p> The Abstract of Paper Presentation topic in .pdf or .doc format should be mailed
+                                    to
                                     vishalbait01@gmail.com on or before March 6th, 2020.</p>
 
                                 <h4 class="font-weight-bold text-warning">Co-ordinators:-</h4>
@@ -270,15 +291,19 @@
                                 <p>Any topic related to Electronics & Telecommunication Department.</p>
                                 <h4 class="font-weight-bold  text-warning">Rules and Regulations:-</h4>
                                 <ol>
-                                    <li> One panel is available for display of each poster. To fit comfortably within
-                                        the poster frame, posters must not exceed 36 inches wide x 48 inch high with 1”
+                                    <li> One panel is available for display of each poster. To fit comfortably
+                                        within
+                                        the poster frame, posters must not exceed 36 inches wide x 48 inch high with
+                                        1”
                                         margin on all side. </li>
-                                    <li> Electrical outlets will not be provided in the poster presentation area.</li>
+                                    <li> Electrical outlets will not be provided in the poster presentation area.
+                                    </li>
                                     <li>Posters should be readable from a distance of 6 feet (2 meters).</li>
                                     <li>The poster should be self-explanatory.</li>
                                     <li>Neither commercial activities nor any advertising may be displayed on the
                                         posters.</li>
-                                    <li>Proper explanation must be essential of each and every parameter visualize in
+                                    <li>Proper explanation must be essential of each and every parameter visualize
+                                        in
                                         the poster.</li>
                                 </ol>
 
@@ -350,7 +375,8 @@
 
                                 <h4 class="font-weight-bold text-warning">Topics:-</h4>
 
-                                <p>Any Project related to Electronics & Telecommunication, Computer & IT Department.</p>
+                                <p>Any Project related to Electronics & Telecommunication, Computer & IT Department.
+                                </p>
 
 
                                 <h4 class="font-weight-bold  text-warning">Rules and Regulations:-</h4>
@@ -362,7 +388,8 @@
                                     <li>An abstract of not more than 500 words should be submitted.</li>
                                     <li>It should contain all major details about project.</li>
                                     <li>Participants will be informed about selection of respective models.</li>
-                                    <li>If any special type of material is required in the project, the requirement for
+                                    <li>If any special type of material is required in the project, the requirement
+                                        for
                                         the same should be submitted well in advance.</li>
 
                                 </ol>
@@ -381,7 +408,8 @@
 
                                 <h4 class="font-weight-bold text-warning">Topics:-</h4>
 
-                                <p>Any Project related to Electronics & Telecommunication, Computer & IT Department.</p>
+                                <p>Any Project related to Electronics & Telecommunication, Computer & IT Department.
+                                </p>
 
                                 <h4 class="font-weight-bold  text-warning">Rules and Regulations:-</h4>
 
@@ -391,7 +419,8 @@
                                     <li>An abstract of not more than 500 words should be submitted.</li>
                                     <li>It should contain all major details about project.</li>
                                     <li>Participants will be informed about selection of respective models.</li>
-                                    <li>If any special type of material is required in the project, the requirement for
+                                    <li>If any special type of material is required in the project, the requirement
+                                        for
                                         the same should be submitted well in advance.</li>
                                 </ol>
 
@@ -576,18 +605,19 @@
         </div>
     </div>
 
+    <!--modal complete-->
 
-
-    <!--**************************       Modals of the Event    ************************************-->
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -11,8 +11,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Nav CSS -->
-    <link rel="stylesheet" href="css/nav.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Image Hover-->
@@ -25,28 +23,53 @@
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
         }
+
+        body,
+        nav {
+            background: #ec008c;
+            background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+            background: linear-gradient(to right, #fc6767, #ec008c);
+            color: white;
+
+        }
     </style>
 
 </head>
 
 <body>
-    <!--      ################      NAV BAR     ##################-->
 
-    <nav>
-        <ul class="topnav" id="dropdownclick">
-            <li><a href="index.html">Home</li></a>
-            <li><a href="eventPage.html">EVENTS</li></a>
-            <li><a href="certificateVerification.html">Verify Certificate</li></a>
-            <li><a href="contactUs.html">Contact Us</li></a>
-            <li><a href="developers.html">Developers</li></a>
-            <li><a href="aboutPage.html">About</li></a>
-            <li class="dropdown"><a href="javascript:void(0);" onclick="function1 ();">&#9776;</a></li>
-        </ul>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-white" href="index.html">Home</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="eventPage.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="certificateVerification.html">Verify Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contactUs.html">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="developers.html">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="aboutPage.html">About</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-
     <main class="container">
-        <h1 class="text-center text-uppercase text-white mt-5 bg-info devInfo p-2  mb-5">Developer</h1>
+        <h1 class="text-center text-uppercase text-white mt-5 devInfo p-2  mb-5">Developers</h1>
 
         <div class="row">
 
@@ -81,7 +104,7 @@
                 </div>
 
                 <div class="text-center mt-5" data-aos="fade-up">
-                    <h4 class="devInfo mb-2 text-primary">VISHAL BAIT</h4>
+                    <h4 class="devInfo mb-2">VISHAL BAIT</h4>
                     <h5 class="devInfo">Web Designer, Database, Back-End & Front-End Developer </h5>
                 </div>
 
@@ -116,7 +139,7 @@
                 </div>
 
                 <div class="text-center mt-5" data-aos="fade-up">
-                    <h4 class="devInfo mb-2 text-primary">SURAJ MOHITE</h4>
+                    <h4 class="devInfo mb-2">SURAJ MOHITE</h4>
                     <h5 class="devInfo">Front-End Developer </h5>
                 </div>
 
@@ -150,7 +173,7 @@
                 </div>
 
                 <div class="text-center mt-5" data-aos="fade-up">
-                    <h4 class="devInfo mb-2 text-primary">ONKAR MOKASHI</h4>
+                    <h4 class="devInfo mb-2">ONKAR MOKASHI</h4>
                     <h5 class="devInfo">Back-End Developer and Android Application Developer </h5>
                 </div>
 
@@ -159,76 +182,23 @@
     </main>
 
 
-    <footer class="bg-footer text-white">
-        <div class="container footer-container">
-            <div class="row">
-
-                <div class="col-md-4">
-                    <p class="footerHead">Pages</p>
-                    <ul class="footerList">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="eventPage.html">Events</a></li>
-                        <li><a href="certificateVerification.html">Get Certificate</a></li>
-                        <li><a href="developers.html">Developers</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="footerHead">About</p>
-                    <ul class="footerList">
-                        <li><a href="About-Page.html">About</a></li>
-                        <li><a href="contactUs.html">Contact Us</a></li>
-                        <li><a href="#">Terms & Condition </a></li>
-                        <li><a href="#">Privacy policy</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="footerHead">Join Us</p>
-                    <a href="#" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-facebook-f fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a href="#" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center">
-            &copy; 2020 GIT SHODH All Rights Reserved.
-        </div>
-    </footer>
-
-
-    <script src="js/nav.js"></script>
-    <script src="js/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
