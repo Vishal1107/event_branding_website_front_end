@@ -5,9 +5,9 @@
 
 ## Event Branding Application: Start to End Support (With Different Technology)
 
-1. Current Repository [Event Branding Application (Bootstrap4)](https://github.com/Vishal1107/EVENT_BRANDING_WEBSITE_FRONT_END)
-2. [Event Branding Application (PHP) ](https://github.com/Vishal1107/EVENT_BRANDING_APPLICATION)
-3. [Event Branding Application (MERN)](https://github.com/Vishal1107/MERN_EVENT_BRANDING_APPLICATION)
+1. Current Repository [Event Branding Application (Bootstrap4)](https://github.com/vrbait1107/EVENT_BRANDING_WEBSITE_FRONT_END)
+2. [Event Branding Application (PHP) ](https://github.com/vrbait1107/EVENT_BRANDING_APPLICATION)
+3. [Event Branding Application (MERN)](https://github.com/vrbait1107/MERN_EVENT_BRANDING_APPLICATION)
 
 ## About Event Branding Application.
 
