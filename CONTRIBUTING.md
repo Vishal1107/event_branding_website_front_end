@@ -1,4 +1,4 @@
-# Contributing to event_branding_website_front_end
+# Contributing to BOOTSTRAP_EBA
 
 ## Please feel free to contibute in this project as well as other project of this github account.
 
@@ -16,7 +16,7 @@ We use github to host code, to track issues and feature requests, as well as acc
 
 ## Report bugs using Github's issues
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/vrbait1107/event_branding_website_front_end/issues); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/vrbait1107/BOOTSTRAP_EBA/issues); it's that easy!
 
 ## Write bug reports with detail, background, and sample code
 
