@@ -8,33 +8,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GIT SHODH 2K20 | ABOUT</title>
 
-    <!--First Animate.css, then Bootstrap.css then Font-Awesome.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--First Bootstrap.css then Font-Awesome.css then AOS Animation then common.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
 
     <style>
         h1 {
             font-family: 'Times New Roman', Times, serif;
         }
 
-        body,
-        nav {
-            background: #FDC830;
-            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
-            background: linear-gradient(to right, #F37335, #FDC830);
-        }
-
-        .card {
-            background-color: #3475;
-            color: white;
-        }
-
         hr {
-            border: 1px dashed white;
+            border: 1px dashed black;
         }
     </style>
 </head>
@@ -43,7 +32,7 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-white" href="index.html">Home</a>
+        <a class="navbar-brand" href="index.html">GIT SHODH 2K20</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,19 +42,22 @@
         <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="eventPage.html">Events</a>
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="certificateVerification.html">Verify Certificate</a>
+                    <a class="nav-link" href="eventPage.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="contactUs.html">Contacts</a>
+                    <a class="nav-link" href="certificateVerification.html">Verify Certificate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="developers.html">Developers</a>
+                    <a class="nav-link" href="contactUs.html">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="aboutPage.html">About</a>
+                    <a class="nav-link" href="developers.html">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutPage.html">About</a>
                 </li>
             </ul>
         </div>
@@ -76,9 +68,9 @@
         <div class="row">
             <section class="col-md-10 offset-md-1">
 
-                <div class="card shadow animated zoomIn slow p-5 my-5 text-justify">
+                <div class="p-5 my-5 text-justify" data-aos="zoom-in" data-aos-duration="1500">
 
-                    <h1 class="text-white text-center text-uppercase font-weight-bold">An OverView</h1>
+                    <h1 class="text-center text-uppercase font-weight-bold">An OverView</h1>
                     <hr>
                     <p>SHODH, GIT Lavel is the annual science and technology festival of the Gharda Institute of
                         Technology Lavel.
@@ -109,7 +101,7 @@
     </main>
 
     <!-- Optional JavaScript -->
-    <!-- JS, Popper.js, and jQuery -->
+    <!-- JS, Popper.js, and jQuery, AOS Library -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -119,6 +111,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 

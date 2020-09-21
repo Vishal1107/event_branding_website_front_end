@@ -6,30 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIT SHODH 2K20 | MECHANICAL EVENTS</title>
 
-    <!--First Animate.css, then Bootstrap.css then Font-Awesome.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--First Bootstrap.css then Font-Awesome.css then AOS Animation then common.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
 
     <style>
-        h3,
-        h1 {
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bold;
-        }
-
         .btn {
-            background: #AA076B;
-            background: -webkit-linear-gradient(to right, #61045F, #AA076B);
-            background: linear-gradient(to right, #61045F, #AA076B);
-            color: white;
-        }
-
-        body,
-        nav {
             background: #AA076B;
             background: -webkit-linear-gradient(to right, #61045F, #AA076B);
             background: linear-gradient(to right, #61045F, #AA076B);
@@ -43,7 +31,7 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-white" href="index.html">Home</a>
+        <a class="navbar-brand" href="index.html">GIT SHODH 2K20</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,19 +41,22 @@
         <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="eventPage.html">Events</a>
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="certificateVerification.html">Verify Certificate</a>
+                    <a class="nav-link" href="eventPage.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="contactUs.html">Contacts</a>
+                    <a class="nav-link" href="certificateVerification.html">Verify Certificate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="developers.html">Developers</a>
+                    <a class="nav-link" href="contactUs.html">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="aboutPage.html">About</a>
+                    <a class="nav-link" href="developers.html">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutPage.html">About</a>
                 </li>
             </ul>
         </div>
@@ -73,45 +64,64 @@
 
     <main class="container">
 
-        <h1 class="title text-center font-weight-bold text-uppercase mt-5">Welcome to mechanical events</h1>
+        <h1 class="text-center font-time font-weight-bold text-uppercase my-5">Welcome to Mechanical events</h1>
 
-        <div class="row mt-5">
+        <section class="row mb-5">
 
-            <section class="col-md-4 mb-5">
-                <div class="card shadow text-center">
-                    <img src="images/eventImages/paper.jpg" class="img-fluid">
-                    <h5 class="text-danger my-3">Entry Fee &#x20b9;150</h5>
-                    <button type='button' data-toggle="modal" data-target='#modal1' class='btn mb-3 rounded-pill 
-             text-uppercase'>View Event Information<button>
+            <div class="col-md-4">
+                <img src="images/eventImages/paper.jpg" data-aos="fade-right" data-aos-duration="1500"
+                    class="img-fluid w-100" style="max-height:250px">
+            </div>
 
-                </div>
-            </section>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Paper
+                    Presentation</h3>
+                <hr>
+                <h5 class="text-danger my-3">Entry Fee &#x20b9;150</h5>
+                <a class='btn mb-3 rounded-pill text-uppercase'>View Event Information</a>
+            </div>
 
+        </section>
 
-            <section class="col-md-4 mb-5">
-                <div class="card shadow text-center">
-                    <img src="images/eventImages/poster.jpg" class="img-fluid">
-                    <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
-                    <button type='button' data-toggle="modal" data-target='#modal2' class='btn mb-3 rounded-pill 
-             text-uppercase'>View Event Information<button>
+        <section class="row mb-5">
 
-                </div>
-            </section>
+            <div class="col-md-4">
+                <img src="images/eventImages/poster.jpg" data-aos="fade-right" data-aos-duration="1500"
+                    class="img-fluid w-100" style="max-height:250px">
+            </div>
 
-            <section class="col-md-4 mb-5">
-                <div class="card shadow text-center">
-                    <img src="images/eventImages/mechProject.jpg" class="img-fluid">
-                    <h5 class="text-danger my-3">Entry Fee &#x20b9;200</h5>
-                    <button type='button' data-toggle="modal" data-target='#modal3' class='btn mb-3 rounded-pill 
-             text-uppercase'>View Event Information<button>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Poster
+                    Presentation</h3>
+                <hr>
+                <h5 class="text-danger my-3">Entry Fee &#x20b9;100</h5>
+                <a class='btn mb-3 rounded-pill text-uppercase'>View Event Information</a>
+            </div>
 
-                </div>
-            </section>
-        </div>
+        </section>
+
+        <section class="row mb-5">
+
+            <div class="col-md-4">
+                <img src="images/eventImages/mechProject.jpg" data-aos="fade-right" data-aos-duration="1500"
+                    class="img-fluid w-100" style="max-height:250px">
+            </div>
+
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Project
+                    Presentation</h3>
+                <hr>
+                <h5 class="text-danger my-3">Entry Fee &#x20b9;200</h5>
+                <a class='btn mb-3 rounded-pill text-uppercase'>View Event Information</a>
+            </div>
+
+        </section>
+
     </main>
 
+
     <!-- Optional JavaScript -->
-    <!-- JS, Popper.js, and jQuery -->
+    <!-- JS, Popper.js, and jQuery, AOS Library -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -121,6 +131,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 

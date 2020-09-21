@@ -7,37 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GIT SHODH 2K20 | DEPARTMENT EVENTS</title>
 
-    <!--First Animate.css, then Bootstrap.css then Font-Awesome.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--First Bootstrap.css then Font-Awesome.css then AOS Animation then common.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-
-    <style>
-        .container {
-            font-family: 'Times New Roman', Times, serif;
-
-        }
-
-        .btn {
-            font-family: sans-serif !important;
-        }
-
-        body,
-        nav {
-            background: #FDC830;
-            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
-            background: linear-gradient(to right, #F37335, #FDC830);
-
-        }
-
-        .card {
-            background-color: #3475;
-            color: white;
-        }
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
 
 </head>
 
@@ -46,7 +23,7 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-white" href="index.html">Home</a>
+        <a class="navbar-brand" href="index.html">GIT SHODH 2K20</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,101 +33,106 @@
         <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="eventPage.html">Events</a>
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="certificateVerification.html">Verify Certificate</a>
+                    <a class="nav-link" href="eventPage.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="contactUs.html">Contacts</a>
+                    <a class="nav-link" href="certificateVerification.html">Verify Certificate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="developers.html">Developers</a>
+                    <a class="nav-link" href="contactUs.html">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="aboutPage.html">About</a>
+                    <a class="nav-link" href="developers.html">Developers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutPage.html">About</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container mt-5">
 
-        <div class="row">
-            <section class="col-md-6 my-5">
-                <div class="card p-4 shadow wow zoomIn slow">
-                    <h3 class="card-title  font-weight-bold text-center text-uppercase mt-2">EXTC
-                        ENGINEERING</h3>
-                    <img src="images/departments/EXTC.jpg" class="img-fluid" style="height:300px">
-                    <a href="extcEvents.html" class="text-uppercase text-center btn btn-primary my-3 rounded-pill">Click
-                        Here to View EXTC events</a>
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <img src="images/departments/EXTC.jpg" class="img-fluid w-100" data-aos="fade-right"
+                    data-aos-duration="1500" style="max-height:250px">
+            </div>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">EXTC
+                    ENGINEERING</h3>
+                <hr>
+                <a href="extcEvents.html" class="text-center btn btn-outline-dark my-3 rounded-pill">
+                    View EXTC Events</a>
+            </div>
+        </div>
 
-                </div>
-            </section>
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <img src="images/departments/CHEM.jpg" class="img-fluid w-100" data-aos="fade-right"
+                    data-aos-duration="1500" style="max-height:250px">
+            </div>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Chemical
+                    ENGINEERING</h3>
+                <hr>
+                <a href="chemEvents.html" class="text-center btn btn-outline-dark my-3 rounded-pill">
+                    View Chemical Events</a>
+            </div>
+        </div>
 
-            <section class="col-md-6 my-5">
-                <div class="card p-4 shadow wow zoomIn slow">
-                    <h3 class="card-title  font-weight-bold text-center text-uppercase mt-2">CHEMICAL
-                        ENGINEERING</h3>
-                    <img src="images/departments/CHEM.jpg" class="w-100" style="height:300px">
-                    <a href="chemEvents.html" class="text-uppercase text-center btn btn-primary my-3 rounded-pill">Click
-                        Here
-                        to View CHEMICAL events</a>
-                </div>
-            </section>
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <img src="images/departments/COMP.jpg" class="img-fluid w-100" data-aos="fade-right"
+                    data-aos-duration="1500" style="max-height:250px">
+            </div>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Computer
+                    ENGINEERING</h3>
+                <hr>
+                <a href="compEvents.html" class="text-center btn btn-outline-dark my-3 rounded-pill">
+                    View Computer Events</a>
+            </div>
         </div>
 
 
-        <div class="row">
-            <section class="col-md-6 my-5">
-                <div class="card p-4 shadow wow zoomIn slow">
-                    <h3 class="card-title  font-weight-bold text-center text-uppercase mt-2">COMPUTER
-                        ENGINEERING</h3>
-                    <img src="images/departments/COMP.jpg" class="img-fluid" style="height:300px">
-                    <a href="compEvents.html" class="text-uppercase text-center btn btn-primary my-3 rounded-pill">Click
-                        Here
-                        to View COMPUTER events</a>
-                </div>
-            </section>
-
-
-            <section class="col-md-6 my-5">
-                <div class="card p-4 shadow wow zoomIn slow">
-                    <h3 class="card-title font-weight-bold  text-center text-uppercase mt-2">MECHANICAL
-                        ENGINEERING</h3>
-                    <img src="images/departments/MECH.jpg" class="img-fluid" style="height:300px">
-                    <a href="mechEvents.html" class="text-uppercase text-center btn btn-primary my-3 rounded-pill">Click
-                        Here
-                        to View MECHANICAL events</a>
-                </div>
-            </section>
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <img src="images/departments/MECH.jpg" class="img-fluid w-100" data-aos="fade-right"
+                    data-aos-duration="1500" style="max-height:250px">
+            </div>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Mechanical
+                    ENGINEERING</h3>
+                <hr>
+                <a href="mechEvents.html" class="text-center btn btn-outline-dark my-3 rounded-pill">
+                    View Mechanical Events</a>
+            </div>
         </div>
 
 
-
-        <div class="row">
-            <section class="col-md-6 my-5">
-                <div class="card p-4 shadow wow zoomIn slow">
-                    <h3 class="card-title  font-weight-bold text-center text-uppercase mt-2">CIVIL
-                        ENGINEERING</h3>
-                    <img src="images/departments/CIVIL.jpg" class="img-fluid" style="height:300px">
-                    <a href="civilEvents.html"
-                        class="text-uppercase text-center btn btn-primary my-3 rounded-pill">Click Here
-                        to View CIVIL events</a>
-                </div>
-            </section>
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <img src="images/departments/CIVIL.jpg" data-aos="fade-right" data-aos-duration="1500"
+                    class="img-fluid w-100" style="max-height:250px">
+            </div>
+            <div class="col-md-8 text-center">
+                <h3 class="font-time font-weight-bold text-uppercase mt-2">Civil
+                    ENGINEERING</h3>
+                <hr>
+                <a href="civilEvents.html" class="text-center btn btn-outline-dark my-3 rounded-pill">
+                    View Civil Events</a>
+            </div>
         </div>
 
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
 
     <!-- Optional JavaScript -->
-    <!-- JS, Popper.js, and jQuery -->
+    <!-- JS, Popper.js, and jQuery, AOS Library -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -160,6 +142,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
 
 </body>
 
