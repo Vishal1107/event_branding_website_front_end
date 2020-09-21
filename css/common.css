@@ -1,10 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
 nav a {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+  font-family: "Staatliches", cursive;
   color: black !important;
+  font-size: 23px;
 }
 
 .font-time {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+}
+
+.font-Staatliches {
+  font-family: "Staatliches", cursive;
+  font-size: 50px;
+}
+
+.navbar-brand {
+  font-family: "Staatliches", cursive;
+  font-size: 30px;
+  font-weight: lighter;
 }
